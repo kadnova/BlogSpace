@@ -1,0 +1,122 @@
+html {
+	background: url('img/bg.png');
+	background-color: #142132;
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-attachment:fixed;
+	min-height: 100%;
+	font-family: sans-serif;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	margin: 0;
+	padding: 0 15px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+
+.header {
+	width: 100%;
+	min-width: 400px;
+	padding: 20px 0 20px;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.name-container {
+	display: flex;
+	height: 105px;
+}
+
+.blog-name {
+	font-size: 50px;
+}
+
+.name-first {
+	color: white;
+}
+
+.name-second {
+	color: darkslateblue
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-width: 430px; 	
+}
+
+.middle {
+	display: flex;
+	justify-content: center;
+	min-width: 400px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: cadetblue;
+	height: 300px;
+	width: 200px;
+	margin-right: 25px;
+	
+}
+
+.menu li {
+	list-style-type: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 600;
+}
+
+.menu li:hover {
+	color: aliceblue;
+}
+
+.menu span {
+	padding-left: 3px;
+	color: azure;
+	font-weight: 600;
+}
+
+.posts-container {
+	width: 600px;
+	height: 100vh;
+}
+
+.post {
+	background-color: bisque;
+	min-height: 200px;
+	min-width: 200px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	padding: 19px;
+}
+
+.post-header {
+	font-family: 'DejaVu Serif Condensed';
+	font-weight: 600;
+	font-size: 35px;
+	padding-left: 10px;
+}
+
+.post img {
+	text-align: left;
+}
+.footer {
+	background: #222;
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	color: #eee;
+	margin: auto;
+	padding: 15px;
+	box-sizing: border-box;
+}
