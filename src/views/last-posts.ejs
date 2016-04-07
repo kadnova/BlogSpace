@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title><%= title %></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	
+<!--  ПООООООДОЖДЕЕЕЕЕЕЕЕТ	-->
+	<!-- bower:css -->
+	<!-- endbower -->
+	
+	<!-- bower:js -->
+	<!-- endbower -->
+	
+	<!-- inject:css -->
+	<!-- endinject -->
+	
+	<!-- inject:js -->
+	<!-- endinject -->
+<!--  ПООООООДОЖДЕЕЕЕЕЕЕЕТ	-->
+	
+	
+
+	<link href="/css/blog-template.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="name-container">
+			<span class="blog-name" >
+			<span class="name-first">GOODBYE</span> <span class="name-second">MOONMEN</span>
+			</span>
+		</div>
+	</header>
+	
+	<div class="main">
+		<div class="middle">
+			<aside class="sidebar">		
+				<nav class="menu">
+					<span><a href="last-posts">Last posts</a></span>
+					<% nav.forEach( function(item){%>
+						<li><a href="<%= item.Link%>" class="last-post"><%= item.Text %></a></li>	
+						<% }) %>
+				<span>Posts summary: <span>7</span></span>
+				</nav>
+			</aside>
+
+			<div class="posts-container">
+				<% lastposts.forEach( function(item){ %>
+				<div class="post">
+				<span class="post-header">
+					<%=item.title%>
+				</span>
+					<p>
+					<%=item.content%>
+					</p>
+				</div>
+				<%})%>
+			</div>
+			
+			
+		</div>
+		
+		
+	</div>
+</body>
+</html>
